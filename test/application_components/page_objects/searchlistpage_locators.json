@@ -1,0 +1,8 @@
+{
+    "locators": {
+      "link_dynamic_productby_text": {
+        "locators": ["//a[contains(text(),'${parameter1}')]"],
+        "description": "Search"
+      }
+    }
+  }

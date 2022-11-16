@@ -1,0 +1,16 @@
+{
+    "locators": {
+      "btn_add_tobasket": {
+        "locators": ["//*[contains(text(),'Add to your basket')]"],
+        "description": "Add To Basket"
+      },
+      "lst_product_quantity": {
+        "locators": ["#product-quantity"],
+        "description": "Product Quantity"
+      },
+      "btn_minicart": {
+        "locators": ["#basket"],
+        "description": "Basket"
+      }
+    }
+  }

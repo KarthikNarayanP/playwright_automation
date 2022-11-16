@@ -1,0 +1,8 @@
+{
+    "Testcase": "TC_2",
+    "TestcaseDescription": "Common Fields - Risk Information -Business logic - Marking effective date unknown",
+    "TestSummary": "Automation POC - Common Fields - Risk Information -Business logic - Marking effective date unknown",
+    "Tags": "@sprint1 @regression @tc_2",
+    "Email": "karthik@cts-shop.com",
+    "Password":"password-1"
+}

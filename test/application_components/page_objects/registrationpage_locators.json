@@ -1,0 +1,28 @@
+{
+    "locators": {
+      "txt_firstname": {
+        "locators": ["#firstName"],
+        "description": "FirstName"
+      },
+      "txt_lastname": {
+        "locators": ["#lastName"],
+        "description": "Last Name"
+      },
+      "txt_email": {
+        "locators": ["#email"],
+        "description": "Email"
+      },
+      "txt_password": {
+        "locators": ["#password"],
+        "description": "Password"
+      },
+      "txt_confirmpassword": {
+        "locators": ["#confirmpassword"],
+        "description": "Confirm Password"
+      },
+      "btn_createaccount": {
+        "locators": ["#registerbutton"],
+        "description": "Create Your E-Shop Account"
+      }
+    }
+  }

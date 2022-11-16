@@ -1,0 +1,32 @@
+{
+  "locators": {
+    "hamburger_menu": {
+      "locators": ["#menu"],
+      "description": "Menu"
+    },
+    "link_login_menu": {
+      "locators": ["#login"],
+      "description": "Menu - Login"
+    },
+    "txt_email": {
+      "locators": ["#email"],
+      "description": "Email"
+    },
+    "txt_password": {
+      "locators": ["#password"],
+      "description": "Password"
+    },
+    "btn_registeraccount": {
+      "locators": ["//*[text()='Create Your E-Shop Account']"],
+      "description": "Create Your E-Shop Account"
+    },
+    "btn_login": {
+      "locators": ["#buttonlogin"],
+      "description": "Button Login"
+    },
+    "loggedin_account": {
+      "locators": [".account"],
+      "description": "Logged In Account"
+    }
+  }
+}

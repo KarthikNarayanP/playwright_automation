@@ -1,0 +1,8 @@
+{
+    "Testcase": "TC_11",
+    "TestcaseDescription": "Validate Accessibility Of Login Page",
+    "TestSummary": "Validate Accessibility Of Login Page",
+    "Tags": "@sprint1 @regression @tc_11",
+    "Email": "karthik@cts-shop.com",
+    "Password":"password-1"
+}

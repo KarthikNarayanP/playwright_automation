@@ -1,0 +1,68 @@
+{
+  "locators": {
+    "txt_title": {
+      "locators": ["#datitle"],
+      "description": "Title"
+    },
+    "txt_firstname": {
+      "locators": ["#dafirstname"],
+      "description": "FirstName"
+    },
+    "txt_lastname": {
+      "locators": ["#dalastname"],
+      "description": "Last Name"
+    },
+    "txt_addressine1": {
+      "locators": ["#daaddressline1"],
+      "description": "Address Line 1"
+    },
+    "txt_addressine2": {
+      "locators": ["#daaddressline2"],
+      "description": "Address Line 2"
+    },
+    "txt_city": {
+      "locators": ["#dacity"],
+      "description": "City"
+    },
+    "txt_state": {
+      "locators": ["#dastateprovinceregion"],
+      "description": "State/Province/Region"
+    },
+    "txt_zipcode": {
+      "locators": ["#dazippostcode"],
+      "description": "Zipcode"
+    },
+    "btn_next": {
+      "locators": ["//*[text()='Next']"],
+      "description": "Next"
+    },
+    "txt_cardnumber": {
+      "locators": ["#cardnumber"],
+      "description": "Card Number"
+    },
+    "txt_nameoncard": {
+      "locators": ["#nameoncard"],
+      "description": "Name On Card"
+    },
+    "txt_expirymonth": {
+      "locators": ["#expirymonth"],
+      "description": "Expiry Month"
+    },
+    "txt_expiryyear": {
+      "locators": ["#expiryyear"],
+      "description": "Expiry Year"
+    },
+    "txt_cvv": {
+      "locators": ["#securitycode"],
+      "description": "Security Code"
+    },
+    "btn_confirm": {
+      "locators": ["#buttonconfirm"],
+      "description": "Confirm"
+    },
+    "ele_confirmation": {
+      "locators": ["//*[text()='Thanks for your order!']"],
+      "description": "Thanks for your order!"
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+    "locators": {
+      "txt_search": {
+        "locators": ["#productsearch"],
+        "description": "Search"
+      },
+      "btn_searchIcon": {
+        "locators": ["#searchicon"],
+        "description": "Search Icon"
+      }
+    }
+  }

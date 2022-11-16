@@ -1,0 +1,10 @@
+{
+    "locators": {
+        "btn_proceedtocheckout": {
+            "locators": [
+                "//*[contains(text(),'Proceed to checkout')]"
+            ],
+            "description": "Proceed to checkout"
+        }
+    }
+}
