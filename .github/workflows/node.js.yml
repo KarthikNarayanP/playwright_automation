@@ -5,7 +5,12 @@ on:
     branches: [ "main" ]
   pull_request:
     branches: [ "main" ]
-
+    
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+  
 jobs:
   playwright_test:
     name: Playwright Test
@@ -33,3 +38,61 @@ jobs:
       - name: Run Tests
         id: test
         run: npx playwright test -g "@regression" --workers=5 --retries=2 --update-snapshots --shard=${{ matrix.shard }}/${{ strategy.job-total }}
+        
+      - name: Upload Artifact
+        uses: actions/upload-artifact@v3
+        if: always()
+        with:
+          name: report-${{ matrix.shard }}
+          path: test/test-results/
+             
+  results_merge:
+    name: Results Merge
+    if: always()
+    needs: playwright_test
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Setup NodeJS SDK ${{ env.NODEJS_VERSION }}
+        uses: actions/setup-node@v3.1.1
+        id: setup-node
+        with:
+          node-version: ${{ env.NODEJS_VERSION }}
+      
+      - uses: actions/download-artifact@v3
+        with:
+          path: test/test-results/
+
+      - name: Install Dependencies
+        run: npm install
+
+      - name: Merge Reports
+        run: npm run merge_report
+        
+      - name: Upload Artifact
+        uses: actions/upload-artifact@v3
+        if: always()
+        with:
+          name: report-final-merged
+          path: html-report
+          
+      - name: Upload Pages Artifact
+        uses: actions/upload-pages-artifact@v1
+        with:
+          path: html-report
+          
+      - name: Setup Pages
+        uses: actions/configure-pages@v2
+
+      - uses: actions/download-artifact@v2
+        with:
+          name: 'github-pages'
+  
+      - name: Deploy to GitHub Pages
+        id: github-pages
+        uses: actions/deploy-pages@v1
