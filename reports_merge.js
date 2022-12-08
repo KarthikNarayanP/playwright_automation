@@ -2,8 +2,7 @@ const { dir } = require("console");
 const fs = require("fs");
 const path = require("path");
 const { mergeHTMLReports } = require("playwright-merge-html-reports");
-let rootPath = "/home/vsts/work/1/reports/";
-
+let rootPath = "//home/runner/work/playwright_automation/playwright_automation/test/test-results/";
 let pathToDirectory = rootPath;
 let arrFilesPath  = [];
 const directoriesInDIrectory = fs.readdirSync(pathToDirectory, { withFileTypes: true })
