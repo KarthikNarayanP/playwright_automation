@@ -34,10 +34,10 @@ const config = {
   reporter: [['html', { open: 'never', outputFolder: 'test/test-results/playwright-html-report' }], ['junit', {  embedAnnotationsAsProperties: true, embedAttachmentsAsProperty: 'testrun_evidence', outputFile: 'test/test-results/results.xml' }],['line'], ['json', {  outputFile: 'test/test-results/results.json' }],  [
     '@alex_neo/playwright-azure-reporter',
     {
-      orgUrl: "https://dev.azure.com/UnifiedJavascriptFramework",
-      token: "cchvrxzwore2l7nssxxsuw7xqk2x2vs47dy6abxqtqr42q23smoq",
-      planId: 6,
-      projectName: "Playwright Test Automation",
+      orgUrl: "https://dev.azure.com/PlaywrightTestAutomation",
+      token: "ldl3fn3koe2giyi3oz2pg276ztrx6f7frl3umf77h4ondlbo36wa",
+      planId: 23,
+      projectName: "PlaywrightTestProject_DigitalShopify",
       environment: 'QA',
       testRunTitle: 'Digital Shopify Regression Execution',
       uploadAttachments: true,

@@ -1,7 +1,7 @@
 {
-    "Testcase": "4",
-    "TestcaseDescription": "Common Fields - Risk Information -Business logic - Marking effective date unknown",
-    "TestSummary": "Automation POC - Common Fields - Risk Information -Business logic - Marking effective date unknown",
+    "Testcase": "18",
+    "TestcaseDescription": "Order Placement Existing User",
+    "TestSummary": "Order Placement Existing User",
     "Tags": "@sprint1 @regression @tc_4",
     "Email": "karthik@cts-shop.com",
     "Password":"password-1",
