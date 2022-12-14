@@ -35,7 +35,7 @@ jobs:
       - name: Install Playwright
         run: npx playwright install
 
-      - name: Run Tests
+      - name: Run Regression Tests
         id: test
         run: npx playwright test -g "@regression" --workers=5 --retries=2 --update-snapshots --shard=${{ matrix.shard }}/${{ strategy.job-total }}
         
