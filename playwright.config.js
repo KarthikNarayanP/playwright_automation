@@ -31,19 +31,7 @@ const config = {
   /* Opt out of parallel tests on CI. */
   workers: process.env.CI ? 1 : undefined,
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
-  reporter: [['html', { open: 'never', outputFolder: 'test/test-results/playwright-html-report' }], ['junit', {  embedAnnotationsAsProperties: true, embedAttachmentsAsProperty: 'testrun_evidence', outputFile: 'test/test-results/results.xml' }],['line'], ['json', {  outputFile: 'test/test-results/results.json' }],  [
-    '@alex_neo/playwright-azure-reporter',
-    {
-      orgUrl: "https://dev.azure.com/PlaywrightTestAutomation",
-      token: "ldl3fn3koe2giyi3oz2pg276ztrx6f7frl3umf77h4ondlbo36wa",
-      planId: 23,
-      projectName: "PlaywrightTestProject_DigitalShopify",
-      environment: 'QA',
-      testRunTitle: 'Digital Shopify Regression Execution',
-      uploadAttachments: true,
-      attachmentsType: ['screenshot', 'video', 'trace'],
-    }
-  ]],
+  reporter: [['html', { open: 'never', outputFolder: 'test/test-results/playwright-html-report' }], ['junit', {  embedAnnotationsAsProperties: true, embedAttachmentsAsProperty: 'testrun_evidence', outputFile: 'test/test-results/results.xml' }],['line'], ['json', {  outputFile: 'test/test-results/results.json' }]],
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
     /* Maximum time each action such as `click()` can take. Defaults to 0 (no limit). */
