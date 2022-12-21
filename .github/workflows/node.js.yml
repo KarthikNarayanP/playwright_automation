@@ -14,11 +14,12 @@ permissions:
 jobs:
   playwright_test:
     name: Playwright Test
-    runs-on: self-hosted
+    runs-on: ubuntu-latest
+    #runs-on: self-hosted
     strategy:
       fail-fast: false
       matrix:
-        shard: [1]
+        shard: [1, 2, 3]
         
     steps:
       - uses: actions/checkout@v3
