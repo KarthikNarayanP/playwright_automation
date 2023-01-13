@@ -14,8 +14,8 @@ permissions:
 jobs:
   playwright_test:
     name: Playwright Test
-    #runs-on: ubuntu-latest
-    runs-on: self-hosted
+    runs-on: ubuntu-latest
+    #runs-on: self-hosted
     strategy:
       fail-fast: false
       matrix:
